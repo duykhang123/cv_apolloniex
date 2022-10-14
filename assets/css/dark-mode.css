@@ -1,0 +1,59 @@
+.ldgroup-dark-mode {
+    --color-primary: #217d8c;
+    --color-secondary: #a09e9e;
+    --color-body-text: #b5b5be;
+    --color-body-bg: #13131a;
+    --color-white: #1c1c24;
+    --color-primary-hover: #1d335a;
+    --color-text-title: #217d8c;
+    --color-border-light: #2e343a70;
+    --color-info: #9267ff;
+    --color-title-post: #495057;
+    --color-time-post: #abb0b5;
+    --color-excerpt-post: #495057;
+    --color-boder: #abb0b54a;
+    --color-light-primary: #1c1c24;
+    /**/
+    --color-border-focus: #217d8c;
+    --color-border-input: #2e343a70;
+    --color-text-input: #a09e9e;
+    --color-text-label: #b5b5be;
+    --color-black: #fff;
+    /* re set*/
+}
+
+
+/*deposit*/
+
+.ldgroup-dark-mode .btn-icon i {
+    color: #ffffff;
+}
+
+.ldgroup-dark-mode .timeline {
+    border-color: rgb(80, 181, 255);
+}
+
+.ldgroup-dark-mode .timeline li .timeline-dots {
+    border-color: #9267ff;
+}
+
+.ldgroup-dark-mode .timeline li .timeline-dots {
+    background: #ffffff;
+}
+
+.ldgroup-dark-mode .table-bordered>:not(caption)>* {
+    border-width: 0;
+    transition: none;
+}
+
+.ldgroup-dark-mode .post.normal .status-icon {
+    border-color: #fff transparent #fff transparent;
+}
+
+.ldgroup-dark-mode .post.normal .post-value .value {
+    color: #fff;
+}
+
+.ldgroup-dark-mode .post.normal:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}

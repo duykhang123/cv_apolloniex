@@ -1,0 +1,667 @@
+/* #region flex item*/
+
+.flex-box-6i>* {
+    width: calc(100% / 6);
+}
+
+.flex-box-5i>* {
+    width: calc(100% / 5);
+}
+
+.flex-box-4i>* {
+    width: calc(100% / 4);
+}
+
+.flex-box-3i {
+    width: calc(100% / 3);
+}
+
+.flex-box-2i {
+    width: 50%;
+}
+
+.flex-box-1i {
+    width: 100%;
+}
+
+
+/* #endregion */
+
+
+/* #region flex space*/
+
+.flex-space-20 {
+    margin: -20px;
+}
+
+.flex-space-20>* {
+    padding: 20px;
+}
+
+
+/* #endregion */
+
+
+/* #region careers hero*/
+
+.careers-hero {
+    padding-top: 120px;
+}
+
+.careers-hero .main-title {
+    margin-bottom: 0;
+}
+
+.careers-hero .excerpt {
+    font-style: italic;
+}
+
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1279.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 639.98px) {
+    .careers-hero .excerpt>br {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {}
+
+@media (max-width: 575.98px) {}
+
+
+/* #endregion */
+
+
+/* #region join-the-crew*/
+
+.join-the-crew {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.join-the-crew .jobs-filter-row {
+    border-bottom: 2px solid var(--color-white);
+    margin-bottom: 60px;
+}
+
+.btn-border-none {
+    border: none;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.btn-border-none:hover,
+.btn-border-none:active,
+.btn-border-none:focus,
+.btn-border-none:visited {
+    color: var(--color-white);
+    border: none !important;
+    box-shadow: none;
+}
+
+.dropdown-toggle-style {
+    min-width: 285px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+}
+
+.dropdown-toggle-style::after {
+    content: "";
+    transform: rotateX( 0deg);
+    transition: 0.3s all linear;
+    position: relative;
+    background: url(../images/icon-down.png);
+    width: 26px;
+    height: 16px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dropdown-toggle-style.show::after {
+    transform: rotateX( 180deg);
+}
+
+.dropdown-style {
+    width: fit-content;
+    margin-left: auto;
+}
+
+.dropdown-style .dropdown-menu {
+    background-color: #17153f;
+}
+
+.dropdown-style .dropdown-menu li a {
+    color: var(--color-white);
+    padding: 15px 20px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    border-left: 2px solid transparent;
+    transition: all .3s;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.dropdown-style .dropdown-menu li a:hover {
+    color: #e4b21e;
+    border-left-color: #e4b21e;
+}
+
+.dropdown-style .dropdown-menu li a:hover,
+.dropdown-style .dropdown-menu li a:focus,
+.dropdown-style .dropdown-menu li a:active,
+.dropdown-style .dropdown-menu li a:visited {
+    background: transparent;
+}
+
+.dropdown-style .dropdown-menu {
+    display: block !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    backface-visibility: hidden;
+    transition: all .4s;
+    margin-top: 20px;
+    position: absolute;
+    inset: 0px auto auto 0px;
+    transform: translate3d(0px, 74px, 0px);
+}
+
+.dropdown-style .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    backface-visibility: visible;
+    margin-top: 0;
+}
+
+
+/**/
+
+.join-the-crew .additional-categories {
+    margin-bottom: 80px;
+}
+
+.join-the-crew .job-depts {
+    margin-bottom: 80px;
+}
+
+.card {
+    position: relative;
+}
+
+.card-job {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.card-job .card-thumb {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 15px;
+    transition: all .3s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-job:hover .card-thumb {
+    transform: scale(1.1);
+}
+
+.card-job .card-thumb .icon-circle {
+    background: url(../images/icon-circle.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.card-job .card-thumb .icon-circle img {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.card-job .card-name {
+    text-transform: uppercase;
+    font-size: 29px;
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+.card-job .card-text {
+    text-align: center;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-job .card-positions,
+.card-job .card-positions span {
+    color: #bfccce;
+    font-size: 22px;
+}
+
+.link-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.left-30 {
+    left: 30px !important;
+}
+
+.left-25 {
+    left: 25px !important;
+}
+
+.left-10 {
+    left: 10px !important;
+}
+
+.left--27 {
+    left: -27px !important;
+}
+
+.left--20 {
+    left: -20px !important;
+}
+
+
+/**/
+
+.social-list-lg {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.social-list-lg li {
+    padding: 15px;
+}
+
+.social-list-lg li a {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.social-list-lg li a i {
+    font-size: 30px;
+    color: #090821;
+}
+
+.social-list-lg li a:hover {
+    background-color: var(--color-white);
+}
+
+.join-the-crew .box-share {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.join-the-crew .box-share .share-label {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.suggest-employee {
+    text-decoration: underline;
+    margin-top: 20px;
+    color: var(--color-white);
+    text-decoration: underline;
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.suggest-employee:hover {
+    color: var(--color-white);
+}
+
+.btn-sm {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.input-style-normal button:focus,
+.input-style-normal button:focus-visible,
+.input-style-normal button:active,
+.input-style-normal button:visited,
+.input-style-normal input:focus,
+.input-style-normal input:active,
+.input-style-normal input:visited {
+    box-shadow: none !important;
+}
+
+.color-black {
+    color: var(--color-black) !important;
+}
+
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1279.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {
+    .job-dept-list.flex-box-4i>* {
+        width: 50%;
+    }
+    .join-the-crew .box-share {
+        justify-content: center;
+    }
+    .social-list-lg {
+        justify-content: center;
+    }
+    .join-the-crew .box-share .share-label {
+        text-align: center;
+    }
+    .suggest-employee {
+        display: flex;
+        justify-content: center;
+        order: -1;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 639.98px) {
+    .join-the-crew .job-depts {
+        margin-bottom: 20px;
+    }
+    .card-job .card-name {
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    .card-job .card-positions,
+    .card-job .card-positions span {
+        color: #bfccce;
+        font-size: 14px;
+    }
+    .card-job .card-thumb {
+        width: 120px;
+        height: 120px;
+    }
+    /**/
+    .join-the-crew {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .join-the-crew .box-share>* {
+        width: 100%;
+    }
+    .join-the-crew .box-share .share-label {
+        /* text-align: center; */
+        font-size: 18px;
+    }
+    .social-list-lg {
+        /* justify-content: center; */
+        margin: -7.5px;
+    }
+    .social-list-lg li {
+        padding: 7.5px;
+    }
+    .suggest-employee {
+        font-size: 16px;
+    }
+    /**/
+    .btn-border-none {
+        font-size: 16px;
+    }
+    .dropdown-toggle-style {
+        min-width: 190px;
+    }
+    .dropdown-toggle-style::after {
+        width: 18px;
+        height: 9px;
+    }
+    .dropdown-style .dropdown-menu li a {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) {}
+
+@media (max-width: 575.98px) {}
+
+@media (max-width: 420px) {
+    .card-job .card-thumb {
+        width: 100px;
+        height: 100px;
+    }
+    .card-job .card-positions,
+    .card-job .card-positions span {
+        /* font-size: 13px; */
+    }
+}
+
+
+/* #endregion */
+
+
+/* #region careers-intro*/
+
+.careers-intro {
+    background-color: #ececef;
+    padding: 110px 0;
+}
+
+.careers-intro .sub-title {
+    color: #090821;
+}
+
+.careers-intro .excerpt {
+    color: #090821;
+}
+
+.careers-intro .features-list {
+    background-color: #cf370a;
+    display: inline-flex;
+    justify-content: center;
+    padding: 5px 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.careers-intro .features-list li {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.careers-intro .features-list li:not(:last-child)::after {
+    display: inline-flex;
+    content: "";
+    background: url("../images/e-yellow-crown.png");
+    background-position-y: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50px;
+    margin-left: 20px;
+}
+
+.careers-intro .excerpt {
+    font-size: 24px;
+    line-height: 1.75;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1279.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {
+    .careers-intro .features-list li:not(:last-child)::after {
+        display: none;
+    }
+    .careers-intro .features-list {
+        background-color: transparent;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .careers-intro .features-list li {
+        color: #cf370a;
+        font-size: 28px;
+        line-height: normal;
+    }
+    .careers-intro .features-list li:not(:first-child)::before {
+        content: "";
+        width: 2px;
+        height: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: #cf370a;
+    }
+    .careers-intro .section-inner {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .careers-intro .section-inner {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 639.98px) {
+    .careers-intro .features-list li {
+        font-size: 16px;
+        font-weight: 800;
+    }
+    .careers-intro .section-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .careers-intro .features-list {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .careers-intro .excerpt {
+        font-size: 18px;
+    }
+    .careers-intro {
+        padding: 60px 0;
+    }
+}
+
+@media (min-width: 576px) {}
+
+@media (max-width: 575.98px) {}
+
+@media (max-width: 420px) {
+    .careers-intro .section-inner {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+/* #endregion */
+
+
+/* #region the-team-gallery*/
+
+.the-team-gallery {
+    padding: 120px 30px 0 30px;
+}
+
+.grid-item {
+    width: 25%;
+}
+
+.grid-item>img {
+    width: 100%;
+}
+
+.the-team-gallery .grid {
+    margin: -20px;
+}
+
+.the-team-gallery .grid>* {
+    padding: 20px;
+}
+
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1279.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {
+    .grid-item {
+        width: 50%;
+    }
+    .the-team-gallery .grid {
+        margin: -10px;
+    }
+    .the-team-gallery .grid>* {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 639.98px) {
+    .the-team-gallery .grid {
+        margin: -5px;
+    }
+    .the-team-gallery .grid>* {
+        padding: 5px;
+    }
+    .the-team-gallery {
+        padding: 60px 10px 0 10px;
+    }
+}
+
+@media (min-width: 576px) {}
+
+@media (max-width: 575.98px) {}
+
+
+/* #endregion */

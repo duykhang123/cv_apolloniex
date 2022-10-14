@@ -1,0 +1,45 @@
+.profile-img-edit {
+    position: relative;
+    display: inline-flex;
+    margin: 0 auto;
+}
+
+.profile-img-edit .profile-img-box {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-img-edit .profile-img-box .profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-img-edit .profile-upload {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+}
+
+.profile-img-edit .profile-upload>label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.profile-img-edit .profile-upload .upload-button {
+    font-size: 16px;
+    color: #fff;
+}

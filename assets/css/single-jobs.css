@@ -1,0 +1,275 @@
+.single-job {
+    padding-bottom: 0;
+}
+
+.job-links a {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.job-links {
+    margin-bottom: 30px;
+}
+
+.card-position {
+    display: flex;
+}
+
+.card-position .card-thumb {
+    width: 220px;
+    margin-right: 30px;
+    height: 220px;
+    position: relative;
+}
+
+.card-position .card-thumb .icon-circle {
+    width: 100%;
+    height: 100%;
+    background: url(../images/icon-circle.png);
+    background-size: cover;
+}
+
+.card-position .card-thumb img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+.card-position .card-text {
+    flex: 1;
+    align-self: center;
+}
+
+.card-position .card-name {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+.card-position .card-sub {
+    font-size: 28px;
+}
+
+.job-position-grid .position-top {
+    margin-bottom: 80px;
+}
+
+.position-details .detail-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.position-details .detail-item h3 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.position-details .detail-item ul {
+    padding-left: 25px;
+}
+
+.position-details .detail-item ul li {
+    list-style: disc;
+}
+
+.position-details .detail-item ul li,
+.position-details .detail-item p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.75;
+    color: rgb(201, 201, 201);
+}
+
+.position-details .detail-item p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.sign-in-linked {
+    color: var(--color-white);
+    padding: 5px 15px;
+    border: none;
+    box-shadow: none;
+    background-color: var(--color-primary);
+    transition: all .3s;
+    color: var(--color-black);
+}
+
+.sign-in-linked:hover {
+    background-color: var(--color-white);
+}
+
+.sign-in-linked:hover,
+.sign-in-linked:focus,
+.sign-in-linked:visited,
+.sign-in-linked:active,
+.sign-in-linked:focus-visible {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.has-error .valid-feedback {
+    display: block;
+    color: #dc3545;
+}
+
+.has-error input {
+    border-color: #dc3545;
+}
+
+.form-style input {
+    background-color: transparent;
+    border-bottom: 2px solid var(--color-white);
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    box-shadow: none;
+    color: #e4b21e;
+    font-size: 24px;
+    border-radius: 0;
+}
+
+.form-style textarea {
+    background-color: transparent;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    box-shadow: none;
+    color: #e4b21e;
+    font-size: 24px;
+    border-radius: 0;
+}
+
+.form-style .form-label {
+    font-size: 24px;
+    text-transform: capitalize;
+    color: rgb(201, 201, 201);
+    margin-bottom: 0;
+}
+
+.form-style .form-label .required {
+    color: #e4b21e;
+}
+
+.label-file-input {
+    color: #e4b21e;
+    font-size: 26px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn-clear-src {
+    color: #e4b21e;
+    transition: all .4s;
+}
+
+.btn-clear-src:hover {
+    color: var(--color-white);
+}
+
+.label-file-input:hover {
+    color: var(--color-white);
+}
+
+.form-style input:focus,
+.form-style textarea:focus {
+    border: 2px solid #0d6efd;
+    background-color: transparent;
+    box-shadow: none;
+    color: #e4b21e;
+    font-size: 24px;
+}
+
+.position-apply .form-position [class*="col"] {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.position-apply .form-position .row {
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.bg-yellow {
+    background-color: #e4b21e;
+    color: var(--color-black) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.single-job .section-inner {
+    margin: 0 auto;
+    width: 85vw;
+    max-width: 1280px;
+}
+
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1279.98px) {}
+
+@media (max-width: 1199.98px) {
+    .card-position .card-name {
+        font-size: 30px;
+    }
+    .card-position .card-sub {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {
+    .form-style .form-label {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 639.98px) {
+    .single-job {
+        padding-top: 100px;
+    }
+    .card-position {
+        flex-direction: column;
+    }
+    .card-position .card-thumb {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .card-position .card-name {
+        font-size: 24px;
+        text-align: center;
+    }
+    .card-position .card-sub {
+        font-size: 16px;
+        text-align: center;
+    }
+    .job-position-grid .position-top {
+        margin-bottom: 40px;
+    }
+    .position-details .detail-item ul li,
+    .position-details .detail-item p {
+        font-size: 16px;
+    }
+    .position-data .sub-title br {
+        display: none;
+    }
+    .job-links a {
+        font-size: 18px;
+    }
+    .btn-default:not(.bg-primary) {
+        padding: 7px 30px;
+    }
+}
+
+@media (min-width: 576px) {}
+
+@media (max-width: 575.98px) {}
+
+@media (max-width: 420px) {
+    .single-job .section-inner {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+    }
+}

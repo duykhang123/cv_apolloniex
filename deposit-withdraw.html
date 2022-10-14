@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/remixicon.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/all-style.css">
+    <link rel="stylesheet" href="assets/css/deposit-withdraw.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="shortcut icon" href="assets/images/logo.png">
+    <title>Apolloniex - Bitcoin & Cryptocurrency Trading Platform</title>
+</head>
+
+<body>
+    <div class="preloader" id="loading">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="top-navbar fixed-top">
+            <div class="top-navbar-inner d-flex align-items-center justify-content-between">
+                <div class="menu-left d-flex align-items-center">
+                    <div class="dropdown toogle-menu d-flex d-md-none">
+                        <a class="btn-toggle-style btn-toggle-dark" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-normal" aria-labelledby="dropdownMenuButton1">
+                            <li class="item-active">
+                                <a href="home.html" class="dropdown-item">
+                                    <i class="fa fa-home"></i>
+                                    <span>Home</span>
+                                    <i class="fa-angle-right fa "></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="deposit-withdraw.html" class="dropdown-item">
+                                    <i class="fa fa-paper-plane "></i>
+                                    <span>Deposit / Withdraw</span>
+                                    <i class="fa-angle-right fa "></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="transfer.html" class="dropdown-item">
+                                    <i class="fa fa-paper-plane-o"></i>
+                                    <span>Transfer</span>
+                                    <i class="fa-angle-right fa "></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-logo">
+                        <a href="home.html" class="header-logo">
+                            <i class="logo-icon fa fa-superpowers"></i>
+                            <span class="logo-text">Apolloniex</span>
+                        </a>
+                    </div>
+                </div>
+                <nav class="menu-horizontal d-none d-md-block">
+                    <ul class="menu d-flex justify-content-center">
+                        <li class="item-active ">
+                            <a href="home.html" class=" " id="menu-deposit-withdraw">
+                                <i class="fa fa-home"></i>
+                                <span>Home</span>
+                                <i class="fa-angle-right fa "></i>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="deposit-withdraw.html" class=" " id="menu-deposit-withdraw ">
+                                <i class="fa fa-exchange"></i>
+                                <span>Deposit / Withdraw</span>
+                                <i class="fa-angle-right fa "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="transfer.html" class=" " id="menu-transfer ">
+                                <i class="fa fa-paper-plane-o"></i>
+                                <span>Transfer</span>
+                                <i class="fa-angle-right fa "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="navbar navbar-expand-lg navbar-light pr-15">
+                    <ul class="navbar-nav ml-auto navbar-list flex-row ">
+                        <li class="nav-item">
+                            <a href="# " class="btn-icon bg-primary js-btn-darkmode">
+                                <i class="fa fa-moon-o "></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="btn-icon bg-primary" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-user"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-default">
+                                <div class="card card-default">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <div class="header-title">
+                                            <h4 class="card-title">đây là tên</h4>
+                                        </div>
+                                        <a class="sign-out" href="sign-out.html" role="button">Sign out
+                                        <i class="fa fa-sign-out ml-2"></i>
+                                    </a>
+                                    </div>
+                                    <div class="card-body card-list d-flex flex-column">
+                                        <a href="account-profile.html" class="media">
+                                            <div class="media-icon">
+                                                <i class="ri-profile-line"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mb-0">My Profile</h6>
+                                                <p class="mb-0">View personal profile details.</p>
+                                            </div>
+                                        </a>
+                                        <a href="account-setting.html" class="media">
+                                            <div class="media-icon">
+                                                <i class="ri-lock-line"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mb-0">Account Settings</h6>
+                                                <p class="mb-0">Manage your account parameters.</p>
+                                            </div>
+                                        </a>
+                                        <a href="commissions.html" class="media">
+                                            <div class="media-icon">
+                                                <i class="ri-heart-2-fill"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mb-0">Commissons</h6>
+                                                <p class="mb-0">Referral and give bonus.</p>
+                                            </div>
+                                        </a>
+                                        <a href="kyc-setting.html" class="media">
+                                            <div class="media-icon">
+                                                <i class="ri-account-box-line"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mb-0">KYC Account</h6>
+                                                <p class="mb-0">Know your customer.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="content-page">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="card card-style style-shadow card-height js-select-changed">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <div class="header-title">
+                                            <h4 class="card-title">Deposit</h4>
+                                        </div>
+                                        <div class="card-header-toolbar d-flex align-items-center">
+                                            <select class="form-control form-select js-select-item">
+                                                <option value="USDT" >Tether USD (USDT)</option>
+                                                <option value="ETH" data-bs-toggle="modal" data-bs-target="#exampleModal" data-show-modal="true">Ethereum (ETH)</option>
+                                                <option value="BTC" selected="">Bitcoin (BTC)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="card-body mt-10">
+                                        <div class="card-body-content js-content-item" id="USDT">
+                                            <div class="qr-code-box d-flex flex-column align-items-center">
+                                                <small>This
+                                                <b> Doge11 (DOGE11)</b>
+                                              
+                                            </small>
+                                                <img src="https://chart.googleapis.com/chart?chs=200x200&amp;cht=qr&amp;chl=&amp;chld=S|0&amp;choe=UTF-8">
+                                                <div class="alert alert-warning">
+                                                    TCGX8DHfmesZQf2xiJibzgpZxtiGx6YzJx </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body-content js-content-item" id="ETH">
+                                            <div class="qr-code-box d-flex flex-column align-items-center">
+                                                <small>This address only accepts 
+                                                <b> Doge11 (DOGE11)</b>
+                                                . Deposit other assets here may be lost
+                                            </small>
+                                                <img src="https://chart.googleapis.com/chart?chs=200x200&amp;cht=qr&amp;chl=&amp;chld=S|0&amp;choe=UTF-8">
+                                                <div class="alert alert-warning">
+                                                    TCGX8DHfmesZQf2xiJibzgpZxtiGx6YzJx </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body-content js-content-item" id="BTC">
+                                            <div class="qr-code-box d-flex flex-column align-items-center">
+                                                <small>This address only accepts btc
+                                                <b> Doge11 (DOGE11)</b>
+                                                . Deposit other assets here may be lost
+                                            </small>
+                                                <img src="https://chart.googleapis.com/chart?chs=200x200&amp;cht=qr&amp;chl=&amp;chld=S|0&amp;choe=UTF-8">
+                                                <div class="alert alert-warning">
+                                                    TCGX8DHfmesZQf2xiJibzgpZxtiGx6YzJx </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card card-style style-shadow card-height">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <div class="header-title">
+                                            <h4 class="card-title">Withdraw</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="withdrawCurrency">Currency</label>
+                                                    <select class="form-control mb-3 form-select">
+                                                        <option class="balance_STAKING" value="STAKING"> STAKING (STAKING) - 180.00</option>
+                                                        <option class="balance_COMMISSIONS" value="COMMISSIONS">Commissions (COMMISSIONS) - 11471.93</option>
+                                                        <option class="balance_USDT" value="USDT">TetherUSD (USDT) - 35021.48</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="withdrawAmount">Amount</label>
+                                                    <input type="number" class="form-control mb-0" placeholder="0.00">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="withdrawAddress">Address</label>
+                                                <input type="text" class="form-control mb-0" name="withdrawAddress" placeholder="TPSv4Dg9N7MfPhoeDLh1nFmV6FtkMnDHm">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="withdrawPasword">Password</label>
+                                                <input type="password" class="form-control mb-0" name="withdrawPasword" placeholder="********">
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-primary d-block w-100">WITHDRAWALS</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card card-style style-shadow">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <div class="header-title">
+                                            <h4 class="card-title">History</h4>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-style table-style-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Type</th>
+                                                    <th>Currency</th>
+                                                    <th>Amount</th>
+                                                    <th>Address</th>
+                                                    <th>Fees</th>
+                                                    <th>TxHash</th>
+                                                    <th>Date time</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>USDT</td>
+                                                    <td>USDT</td>
+                                                    <td>9800.00000000</td>
+                                                    <td><a href="#" target="_blank">TSa6a...JziCt</a></td>
+                                                    <td>200.00000000</td>
+                                                    <td><a href="#" target="_blank">993ad...28f50</a></td>
+                                                    <td>1 month ago</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>USDT</td>
+                                                    <td>USDT</td>
+                                                    <td>9800.00000000</td>
+                                                    <td><a href="#" target="_blank">TSa6a...JziCt</a></td>
+                                                    <td>200.00000000</td>
+                                                    <td><a href="#" target="_blank">993ad...28f50</a></td>
+                                                    <td>1 month ago</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>USDT</td>
+                                                    <td>USDT</td>
+                                                    <td>9800.00000000</td>
+                                                    <td><a href="#" target="_blank">TSa6a...JziCt</a></td>
+                                                    <td>200.00000000</td>
+                                                    <td><a href="#" target="_blank">993ad...28f50</a></td>
+                                                    <td>1 month ago</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>USDT</td>
+                                                    <td>USDT</td>
+                                                    <td>9800.00000000</td>
+                                                    <td><a href="#" target="_blank">TSa6a...JziCt</a></td>
+                                                    <td>200.00000000</td>
+                                                    <td><a href="#" target="_blank">993ad...28f50</a></td>
+                                                    <td>1 month ago</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>USDT</td>
+                                                    <td>USDT</td>
+                                                    <td>9800.00000000</td>
+                                                    <td><a href="#" target="_blank">TSa6a...JziCt</a></td>
+                                                    <td>200.00000000</td>
+                                                    <td><a href="#" target="_blank">993ad...28f50</a></td>
+                                                    <td>1 month ago</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>USDT</td>
+                                                    <td>USDT</td>
+                                                    <td>9800.00000000</td>
+                                                    <td><a href="#" target="_blank">TSa6a...JziCt</a></td>
+                                                    <td>200.00000000</td>
+                                                    <td><a href="#" target="_blank">993ad...28f50</a></td>
+                                                    <td>1 month ago</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>USDT</td>
+                                                    <td>USDT</td>
+                                                    <td>9800.00000000</td>
+                                                    <td><a href="#" target="_blank">TSa6a...JziCt</a></td>
+                                                    <td>200.00000000</td>
+                                                    <td><a href="#" target="_blank">993ad...28f50</a></td>
+                                                    <td>1 month ago</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>USDT</td>
+                                                    <td>USDT</td>
+                                                    <td>9800.00000000</td>
+                                                    <td><a href="#" target="_blank">TSa6a...JziCt</a></td>
+                                                    <td>200.00000000</td>
+                                                    <td><a href="#" target="_blank">993ad...28f50</a></td>
+                                                    <td>1 month ago</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>USDT</td>
+                                                    <td>USDT</td>
+                                                    <td>9800.00000000</td>
+                                                    <td><a href="#" target="_blank">TSa6a...JziCt</a></td>
+                                                    <td>200.00000000</td>
+                                                    <td><a href="#" target="_blank">993ad...28f50</a></td>
+                                                    <td>1 month ago</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>USDT</td>
+                                                    <td>USDT</td>
+                                                    <td>9800.00000000</td>
+                                                    <td><a href="#" target="_blank">TSa6a...JziCt</a></td>
+                                                    <td>200.00000000</td>
+                                                    <td><a href="#" target="_blank">993ad...28f50</a></td>
+                                                    <td>1 month ago</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>USDT</td>
+                                                    <td>USDT</td>
+                                                    <td>9800.00000000</td>
+                                                    <td><a href="#" target="_blank">TSa6a...JziCt</a></td>
+                                                    <td>200.00000000</td>
+                                                    <td><a href="#" target="_blank">993ad...28f50</a></td>
+                                                    <td>1 month ago</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>USDT</td>
+                                                    <td>USDT</td>
+                                                    <td>9800.00000000</td>
+                                                    <td><a href="#" target="_blank">TSa6a...JziCt</a></td>
+                                                    <td>200.00000000</td>
+                                                    <td><a href="#" target="_blank">993ad...28f50</a></td>
+                                                    <td>1 month ago</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card card-style style-shadow">
+                            <div class="card-news">
+                                <div class="card-header">
+                                    <h4 class="card-title">Crypto News</h4>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-news">
+                                        <li>
+                                            <div class="post-news">
+                                                <a href="#" class="post-news-thumb">
+                                                    <img src="https://static.cryptohopper.com/images/news/uploads/1624962218-scheduled-platform-downtime-june-30th.jpg" alt="">
+                                                </a>
+                                                <div class="post-news-text">
+                                                    <a class="post-news-title">Scheduled Platform Downtime — June 30th</a>
+                                                    <div class="post-news-time">Bitfinex - 13 Minutes ago</div>
+                                                    <div class="post-news-excerpt">
+                                                        Bitfinex will be performing a system upgrade on Wednesday, June 30th designed to enhance the stability and scalability of the iFinex infrastructure.</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post-news">
+                                                <a href="#" class="post-news-thumb">
+                                                    <img src="https://static.cryptohopper.com/images/news/uploads/1624962218-scheduled-platform-downtime-june-30th.jpg" alt="">
+                                                </a>
+                                                <div class="post-news-text">
+                                                    <a class="post-news-title">Scheduled Platform Downtime — June 30th</a>
+                                                    <div class="post-news-time">Bitfinex - 13 Minutes ago</div>
+                                                    <div class="post-news-excerpt">
+                                                        Bitfinex will be performing a system upgrade on Wednesday, June 30th designed to enhance the stability and scalability of the iFinex infrastructure.</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post-news">
+                                                <a href="#" class="post-news-thumb">
+                                                    <img src="https://static.cryptohopper.com/images/news/uploads/1624962218-scheduled-platform-downtime-june-30th.jpg" alt="">
+                                                </a>
+                                                <div class="post-news-text">
+                                                    <a class="post-news-title">Scheduled Platform Downtime — June 30th</a>
+                                                    <div class="post-news-time">Bitfinex - 13 Minutes ago</div>
+                                                    <div class="post-news-excerpt">
+                                                        Bitfinex will be performing a system upgrade on Wednesday, June 30th designed to enhance the stability and scalability of the iFinex infrastructure.</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post-news">
+                                                <a href="#" class="post-news-thumb">
+                                                    <img src="https://static.cryptohopper.com/images/news/uploads/1624962218-scheduled-platform-downtime-june-30th.jpg" alt="">
+                                                </a>
+                                                <div class="post-news-text">
+                                                    <a class="post-news-title">Scheduled Platform Downtime — June 30th</a>
+                                                    <div class="post-news-time">Bitfinex - 13 Minutes ago</div>
+                                                    <div class="post-news-excerpt">
+                                                        Bitfinex will be performing a system upgrade on Wednesday, June 30th designed to enhance the stability and scalability of the iFinex infrastructure.</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="https://www.cryptohopper.com/news" class="readmore">Read more news at Cryptohopper</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-right">
+                    <p>
+                        Copyright 2021 <a href="apolloniex.com">Apolloniex</a>. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="widgets-marquee">
+        <marquee scrollamount="7 ">
+            <div class="marquee-list ">
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post increase ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post decrease ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post normal ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post increase ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post decrease ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post normal ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post increase ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post decrease ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post normal ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post increase ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post decrease ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post normal ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post increase ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post decrease ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post normal ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post increase ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post decrease ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="marquee-item ">
+                    <a href="# " target="_blank " class="marquee-link ">
+                        <div class="post normal ">
+                            <div class="post-icon ">
+                                <img src="assets/images/litecoin.webp ">
+                            </div>
+                            <div class="post-title ">
+                                <span>Bitcoin</span> (BTC)
+                            </div>
+
+                            <div class="post-value ">
+                                <div class="value ">
+                                    <span>$34,832</span>
+                                    <span>(0.88%)</span>
+                                </div>
+                                <div class="status-icon "></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </marquee>
+    </div>
+    <div class="fade modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="card card-style style-shadow modal-content">
+                <div class="card-header d-flex align-items-end">
+                    <div class="header-title d-flex justify-content-between w-100">
+                        <h4 class="card-title">2-Factor Security</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="ri-close-line"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body mt-10">
+                    <div id="USDT">
+                        <div class="qr-code-box d-flex flex-column align-items-center">
+                            <div class="alert alert-success text-center">
+                                Deposit USDT,Apollo11,DOGE11 TRC20 platform . After send currency to this address, you must enter the transfer transaction code in the form below. If the send transaction does not enter transaction code, it will not be recorded.
+                            </div>
+                            <img src="https://chart.googleapis.com/chart?chs=200x200&amp;cht=qr&amp;chl=TCGX8DHfmesZQf2xiJibzgpZxtiGx6YzJx&amp;chld=S|0&amp;choe=UTF-8">
+                            <div class="alert alert-warning">TCGX8DHfmesZQf2xiJibzgpZxtiGx6YzJx </div>
+                        </div>
+                        <form method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Hash Transaction </label>
+                                        <input type="text" class="form-control" placeholder="b0a6cd88caec894cb00b0ce584e12be86207bf972085d4e7081179ea56997b46" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Confirm </label>
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block login-btn w-100" id="depositBtn">Deposit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.6.0.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
